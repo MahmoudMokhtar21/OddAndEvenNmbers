@@ -21,18 +21,6 @@ static void PrintNumbers(string title,IEnumerable<int> nums)
     Console.Write(" ]");
 }
 
-static bool IsEven(int n)
-{
-    if (n % 2 == 0)
-        return true;
-    else
-        return false;
-}
-static bool IsOdd(int n)
-{
-    if (n % 2 == 0)
-        return false;
-    else
-        return true;
+static bool IsEven(int n) => n%2 == 0;
 
-}
+static bool IsOdd(int n) => !IsEven(n);
